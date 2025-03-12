@@ -5,7 +5,7 @@
 To install the package, run:
 
 ```bash
-pip install cy_largestinternalrectangle
+pip install git+https://github.com/NathanTambeurRelu/CythonLIR.git
 ```
 
 ## How to Use
