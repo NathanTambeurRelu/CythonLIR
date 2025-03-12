@@ -1,0 +1,22 @@
+Metadata-Version: 2.2
+Name: largestinternalrectangle
+Version: 0.1
+Summary: Fast Cython implementation for largest interior rectangle calculations.
+Author: Nathan
+Author-email: nathan.tambeur@relu.eu
+Description-Content-Type: text/markdown
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: description-content-type
+Dynamic: summary
+
+### How to rebuild the Cython code/Python package
+
+For compilation of Cython code and usage as Python Package see:
+https://cython.readthedocs.io/en/latest/src/tutorial/cython_tutorial.html
+
+run: python setup.py build_ext --inplace
+
+Building of the wheel:
+python setup.py sdist bdist_wheel
