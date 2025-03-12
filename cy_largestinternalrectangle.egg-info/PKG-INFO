@@ -1,5 +1,5 @@
 Metadata-Version: 2.2
-Name: largestinternalrectangle
+Name: cy_largestinternalrectangle
 Version: 0.1
 Summary: Fast Cython implementation for largest interior rectangle calculations.
 Author: Nathan
@@ -10,6 +10,11 @@ Dynamic: author-email
 Dynamic: description
 Dynamic: description-content-type
 Dynamic: summary
+
+### How to use
+
+
+
 
 ### How to rebuild the Cython code/Python package
 

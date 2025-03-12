@@ -22,12 +22,12 @@
         "include_dirs": [
             "/home/creed/.local/lib/python3.10/site-packages/numpy/_core/include"
         ],
-        "name": "largestinternalrectangle.largestinternalrectangle",
+        "name": "cy_largestinternalrectangle",
         "sources": [
             "largestinternalrectangle/largestinternalrectangle.pyx"
         ]
     },
-    "module_name": "largestinternalrectangle.largestinternalrectangle"
+    "module_name": "cy_largestinternalrectangle"
 }
 END: Cython Metadata */
 
@@ -1247,8 +1247,8 @@ static CYTHON_INLINE float __PYX_NAN() {
   #endif
 #endif
 
-#define __PYX_HAVE__largestinternalrectangle__largestinternalrectangle
-#define __PYX_HAVE_API__largestinternalrectangle__largestinternalrectangle
+#define __PYX_HAVE__cy_largestinternalrectangle
+#define __PYX_HAVE_API__cy_largestinternalrectangle
 /* Early includes */
 #include <math.h>
 #include <stdint.h>
@@ -3217,7 +3217,7 @@ static CYTHON_INLINE char *__pyx_f_5numpy_7ndarray_4data_data(PyArrayObject *__p
 
 /* Module declarations from "numpy" */
 
-/* Module declarations from "largestinternalrectangle.largestinternalrectangle" */
+/* Module declarations from "cy_largestinternalrectangle" */
 static PyObject *__pyx_collections_abc_Sequence = 0;
 static PyObject *generic = 0;
 static PyObject *strided = 0;
@@ -3264,11 +3264,11 @@ static PyObject *__pyx_unpickle_Enum__set_state(struct __pyx_MemviewEnum_obj *, 
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn_uint32_t = { "uint32_t", NULL, sizeof(uint32_t), { 0 }, 0, __PYX_IS_UNSIGNED(uint32_t) ? 'U' : 'I', __PYX_IS_UNSIGNED(uint32_t), 0 };
 static __Pyx_TypeInfo __Pyx_TypeInfo_nn_uint8_t = { "uint8_t", NULL, sizeof(uint8_t), { 0 }, 0, __PYX_IS_UNSIGNED(uint8_t) ? 'U' : 'I', __PYX_IS_UNSIGNED(uint8_t), 0 };
 /* #### Code section: before_global_var ### */
-#define __Pyx_MODULE_NAME "largestinternalrectangle.largestinternalrectangle"
-extern int __pyx_module_is_main_largestinternalrectangle__largestinternalrectangle;
-int __pyx_module_is_main_largestinternalrectangle__largestinternalrectangle = 0;
+#define __Pyx_MODULE_NAME "cy_largestinternalrectangle"
+extern int __pyx_module_is_main_cy_largestinternalrectangle;
+int __pyx_module_is_main_cy_largestinternalrectangle = 0;
 
-/* Implementation of "largestinternalrectangle.largestinternalrectangle" */
+/* Implementation of "cy_largestinternalrectangle" */
 /* #### Code section: global_var ### */
 static PyObject *__pyx_builtin_range;
 static PyObject *__pyx_builtin___import__;
@@ -3441,6 +3441,7 @@ static const char __pyx_k_Index_out_of_bounds_axis_d[] = "Index out of bounds (a
 static const char __pyx_k_largest_interior_rectangle[] = "largest_interior_rectangle";
 static const char __pyx_k_Step_may_not_be_zero_axis_d[] = "Step may not be zero (axis %d)";
 static const char __pyx_k_cy_get_horizontal_adjacency[] = "cy_get_horizontal_adjacency";
+static const char __pyx_k_cy_largestinternalrectangle[] = "cy_largestinternalrectangle";
 static const char __pyx_k_itemsize_0_for_cython_array[] = "itemsize <= 0 for cython.array";
 static const char __pyx_k_unable_to_allocate_array_data[] = "unable to allocate array data.";
 static const char __pyx_k_strided_and_direct_or_indirect[] = "<strided and direct or indirect>";
@@ -3462,7 +3463,6 @@ static const char __pyx_k_no_default___reduce___due_to_non[] = "no default __red
 static const char __pyx_k_numpy__core_multiarray_failed_to[] = "numpy._core.multiarray failed to import";
 static const char __pyx_k_numpy__core_umath_failed_to_impo[] = "numpy._core.umath failed to import";
 static const char __pyx_k_unable_to_allocate_shape_and_str[] = "unable to allocate shape and strides.";
-static const char __pyx_k_largestinternalrectangle_largest_2[] = "largestinternalrectangle.largestinternalrectangle";
 /* #### Code section: decls ### */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array___cinit__(struct __pyx_array_obj *__pyx_v_self, PyObject *__pyx_v_shape, Py_ssize_t __pyx_v_itemsize, PyObject *__pyx_v_format, PyObject *__pyx_v_mode, int __pyx_v_allocate_buffer); /* proto */
 static int __pyx_array___pyx_pf_15View_dot_MemoryView_5array_2__getbuffer__(struct __pyx_array_obj *__pyx_v_self, Py_buffer *__pyx_v_info, int __pyx_v_flags); /* proto */
@@ -3505,16 +3505,16 @@ static void __pyx_memoryviewslice___pyx_pf_15View_dot_MemoryView_16_memoryviewsl
 static PyObject *__pyx_pf___pyx_memoryviewslice___reduce_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self); /* proto */
 static PyObject *__pyx_pf___pyx_memoryviewslice_2__setstate_cython__(CYTHON_UNUSED struct __pyx_memoryviewslice_obj *__pyx_v_self, CYTHON_UNUSED PyObject *__pyx_v___pyx_state); /* proto */
 static PyObject *__pyx_pf_15View_dot_MemoryView___pyx_unpickle_Enum(CYTHON_UNUSED PyObject *__pyx_self, PyObject *__pyx_v___pyx_type, long __pyx_v___pyx_checksum, PyObject *__pyx_v___pyx_state); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_cy_get_horizontal_adjacency(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_cells); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_2cy_get_vertical_adjacency(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_cells); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_4largest_interior_rectangle(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_grid); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_6predict_vector_size(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_array); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_8h_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_h_adjacency, int __pyx_v_x, int __pyx_v_y); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_10v_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_v_adjacency, int __pyx_v_x, int __pyx_v_y); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_12spans(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_h_vector, __Pyx_memviewslice __pyx_v_v_vector); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_14biggest_span(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_spans_array); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_16span_map(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_grid, __Pyx_memviewslice __pyx_v_h_adjacency, __Pyx_memviewslice __pyx_v_v_adjacency); /* proto */
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_18biggest_span_in_span_map(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_span_map); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_cy_get_horizontal_adjacency(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_cells); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_2cy_get_vertical_adjacency(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_cells); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_4largest_interior_rectangle(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_grid); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_6predict_vector_size(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_array); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_8h_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_h_adjacency, int __pyx_v_x, int __pyx_v_y); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_10v_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_v_adjacency, int __pyx_v_x, int __pyx_v_y); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_12spans(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_h_vector, __Pyx_memviewslice __pyx_v_v_vector); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_14biggest_span(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_spans_array); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_16span_map(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_grid, __Pyx_memviewslice __pyx_v_h_adjacency, __Pyx_memviewslice __pyx_v_v_adjacency); /* proto */
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_18biggest_span_in_span_map(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_span_map); /* proto */
 static PyObject *__pyx_tp_new_array(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_Enum(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
 static PyObject *__pyx_tp_new_memoryview(PyTypeObject *t, PyObject *a, PyObject *k); /*proto*/
@@ -3663,6 +3663,7 @@ typedef struct {
   PyObject *__pyx_n_s_current;
   PyObject *__pyx_n_s_cy_get_horizontal_adjacency;
   PyObject *__pyx_n_s_cy_get_vertical_adjacency;
+  PyObject *__pyx_n_s_cy_largestinternalrectangle;
   PyObject *__pyx_n_s_dict;
   PyObject *__pyx_kp_u_disable;
   PyObject *__pyx_n_s_dtype;
@@ -3697,7 +3698,6 @@ typedef struct {
   PyObject *__pyx_n_s_j;
   PyObject *__pyx_n_s_largest_interior_rectangle;
   PyObject *__pyx_kp_s_largestinternalrectangle_largest;
-  PyObject *__pyx_n_s_largestinternalrectangle_largest_2;
   PyObject *__pyx_n_s_main;
   PyObject *__pyx_n_s_max;
   PyObject *__pyx_n_s_max_area;
@@ -3959,6 +3959,7 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_current);
   Py_CLEAR(clear_module_state->__pyx_n_s_cy_get_horizontal_adjacency);
   Py_CLEAR(clear_module_state->__pyx_n_s_cy_get_vertical_adjacency);
+  Py_CLEAR(clear_module_state->__pyx_n_s_cy_largestinternalrectangle);
   Py_CLEAR(clear_module_state->__pyx_n_s_dict);
   Py_CLEAR(clear_module_state->__pyx_kp_u_disable);
   Py_CLEAR(clear_module_state->__pyx_n_s_dtype);
@@ -3993,7 +3994,6 @@ static int __pyx_m_clear(PyObject *m) {
   Py_CLEAR(clear_module_state->__pyx_n_s_j);
   Py_CLEAR(clear_module_state->__pyx_n_s_largest_interior_rectangle);
   Py_CLEAR(clear_module_state->__pyx_kp_s_largestinternalrectangle_largest);
-  Py_CLEAR(clear_module_state->__pyx_n_s_largestinternalrectangle_largest_2);
   Py_CLEAR(clear_module_state->__pyx_n_s_main);
   Py_CLEAR(clear_module_state->__pyx_n_s_max);
   Py_CLEAR(clear_module_state->__pyx_n_s_max_area);
@@ -4233,6 +4233,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_current);
   Py_VISIT(traverse_module_state->__pyx_n_s_cy_get_horizontal_adjacency);
   Py_VISIT(traverse_module_state->__pyx_n_s_cy_get_vertical_adjacency);
+  Py_VISIT(traverse_module_state->__pyx_n_s_cy_largestinternalrectangle);
   Py_VISIT(traverse_module_state->__pyx_n_s_dict);
   Py_VISIT(traverse_module_state->__pyx_kp_u_disable);
   Py_VISIT(traverse_module_state->__pyx_n_s_dtype);
@@ -4267,7 +4268,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
   Py_VISIT(traverse_module_state->__pyx_n_s_j);
   Py_VISIT(traverse_module_state->__pyx_n_s_largest_interior_rectangle);
   Py_VISIT(traverse_module_state->__pyx_kp_s_largestinternalrectangle_largest);
-  Py_VISIT(traverse_module_state->__pyx_n_s_largestinternalrectangle_largest_2);
   Py_VISIT(traverse_module_state->__pyx_n_s_main);
   Py_VISIT(traverse_module_state->__pyx_n_s_max);
   Py_VISIT(traverse_module_state->__pyx_n_s_max_area);
@@ -4539,6 +4539,7 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_current __pyx_mstate_global->__pyx_n_s_current
 #define __pyx_n_s_cy_get_horizontal_adjacency __pyx_mstate_global->__pyx_n_s_cy_get_horizontal_adjacency
 #define __pyx_n_s_cy_get_vertical_adjacency __pyx_mstate_global->__pyx_n_s_cy_get_vertical_adjacency
+#define __pyx_n_s_cy_largestinternalrectangle __pyx_mstate_global->__pyx_n_s_cy_largestinternalrectangle
 #define __pyx_n_s_dict __pyx_mstate_global->__pyx_n_s_dict
 #define __pyx_kp_u_disable __pyx_mstate_global->__pyx_kp_u_disable
 #define __pyx_n_s_dtype __pyx_mstate_global->__pyx_n_s_dtype
@@ -4573,7 +4574,6 @@ static int __pyx_m_traverse(PyObject *m, visitproc visit, void *arg) {
 #define __pyx_n_s_j __pyx_mstate_global->__pyx_n_s_j
 #define __pyx_n_s_largest_interior_rectangle __pyx_mstate_global->__pyx_n_s_largest_interior_rectangle
 #define __pyx_kp_s_largestinternalrectangle_largest __pyx_mstate_global->__pyx_kp_s_largestinternalrectangle_largest
-#define __pyx_n_s_largestinternalrectangle_largest_2 __pyx_mstate_global->__pyx_n_s_largestinternalrectangle_largest_2
 #define __pyx_n_s_main __pyx_mstate_global->__pyx_n_s_main
 #define __pyx_n_s_max __pyx_mstate_global->__pyx_n_s_max
 #define __pyx_n_s_max_area __pyx_mstate_global->__pyx_n_s_max_area
@@ -20029,15 +20029,15 @@ static CYTHON_INLINE NPY_DATETIMEUNIT __pyx_f_5numpy_get_datetime64_unit(PyObjec
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_1cy_get_horizontal_adjacency(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_1cy_get_horizontal_adjacency(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_1cy_get_horizontal_adjacency = {"cy_get_horizontal_adjacency", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_1cy_get_horizontal_adjacency, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_1cy_get_horizontal_adjacency(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_1cy_get_horizontal_adjacency = {"cy_get_horizontal_adjacency", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_1cy_get_horizontal_adjacency, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_1cy_get_horizontal_adjacency(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -20108,11 +20108,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_cells, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.cy_get_horizontal_adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.cy_get_horizontal_adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_cy_get_horizontal_adjacency(__pyx_self, __pyx_v_cells);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_cy_get_horizontal_adjacency(__pyx_self, __pyx_v_cells);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_cells, 1);
@@ -20126,7 +20126,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_cy_get_horizontal_adjacency(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_cells) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_cy_get_horizontal_adjacency(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_cells) {
   int __pyx_v_nrows;
   int __pyx_v_ncols;
   __Pyx_memviewslice __pyx_v_adjacency_horizontal = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -20355,7 +20355,7 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.cy_get_horizontal_adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.cy_get_horizontal_adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_adjacency_horizontal, 1);
@@ -20373,15 +20373,15 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_3cy_get_vertical_adjacency(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_3cy_get_vertical_adjacency(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_3cy_get_vertical_adjacency = {"cy_get_vertical_adjacency", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_3cy_get_vertical_adjacency, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_3cy_get_vertical_adjacency(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_3cy_get_vertical_adjacency = {"cy_get_vertical_adjacency", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_3cy_get_vertical_adjacency, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_3cy_get_vertical_adjacency(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -20452,11 +20452,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_cells, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.cy_get_vertical_adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.cy_get_vertical_adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_2cy_get_vertical_adjacency(__pyx_self, __pyx_v_cells);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_2cy_get_vertical_adjacency(__pyx_self, __pyx_v_cells);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_cells, 1);
@@ -20470,7 +20470,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_2cy_get_vertical_adjacency(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_cells) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_2cy_get_vertical_adjacency(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_cells) {
   int __pyx_v_nrows;
   int __pyx_v_ncols;
   __Pyx_memviewslice __pyx_v_adjacency_vertical = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -20699,7 +20699,7 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
   __Pyx_XDECREF(__pyx_t_4);
   __Pyx_XDECREF(__pyx_t_5);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.cy_get_vertical_adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.cy_get_vertical_adjacency", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_adjacency_vertical, 1);
@@ -20717,15 +20717,15 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_5largest_interior_rectangle(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_5largest_interior_rectangle(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_5largest_interior_rectangle = {"largest_interior_rectangle", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_5largest_interior_rectangle, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_5largest_interior_rectangle(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_5largest_interior_rectangle = {"largest_interior_rectangle", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_5largest_interior_rectangle, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_5largest_interior_rectangle(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -20796,11 +20796,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_grid, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.largest_interior_rectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.largest_interior_rectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_4largest_interior_rectangle(__pyx_self, __pyx_v_grid);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_4largest_interior_rectangle(__pyx_self, __pyx_v_grid);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_grid, 1);
@@ -20814,7 +20814,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_4largest_interior_rectangle(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_grid) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_4largest_interior_rectangle(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_grid) {
   __Pyx_memviewslice __pyx_v_h_adjacency = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_v_adjacency = { 0, 0, { 0 }, { 0 }, { 0 } };
   __Pyx_memviewslice __pyx_v_s_map = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -21017,7 +21017,7 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
   __Pyx_XDECREF(__pyx_t_7);
   __Pyx_XDECREF(__pyx_t_8);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_9, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.largest_interior_rectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.largest_interior_rectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_h_adjacency, 1);
@@ -21037,15 +21037,15 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_7predict_vector_size(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_7predict_vector_size(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_7predict_vector_size = {"predict_vector_size", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_7predict_vector_size, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_7predict_vector_size(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_7predict_vector_size = {"predict_vector_size", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_7predict_vector_size, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_7predict_vector_size(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -21116,11 +21116,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_array, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.predict_vector_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.predict_vector_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_6predict_vector_size(__pyx_self, __pyx_v_array);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_6predict_vector_size(__pyx_self, __pyx_v_array);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_array, 1);
@@ -21134,7 +21134,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_6predict_vector_size(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_array) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_6predict_vector_size(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_array) {
   int __pyx_v_i;
   int __pyx_v_n;
   uint32_t __pyx_v_val;
@@ -21241,7 +21241,7 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
   /* function exit code */
   __pyx_L1_error:;
   __Pyx_XDECREF(__pyx_t_6);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.predict_vector_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.predict_vector_size", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __Pyx_XGIVEREF(__pyx_r);
@@ -21258,15 +21258,15 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_9h_vector(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_9h_vector(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_9h_vector = {"h_vector", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_9h_vector, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_9h_vector(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_9h_vector = {"h_vector", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_9h_vector, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_9h_vector(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -21367,11 +21367,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_h_adjacency, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.h_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.h_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_8h_vector(__pyx_self, __pyx_v_h_adjacency, __pyx_v_x, __pyx_v_y);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_8h_vector(__pyx_self, __pyx_v_h_adjacency, __pyx_v_x, __pyx_v_y);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_h_adjacency, 1);
@@ -21385,7 +21385,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_8h_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_h_adjacency, int __pyx_v_x, int __pyx_v_y) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_8h_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_h_adjacency, int __pyx_v_x, int __pyx_v_y) {
   int __pyx_v_vector_size;
   int __pyx_v_i;
   int __pyx_v_j;
@@ -21697,7 +21697,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_3, 1, (PyObject *(*)(char *)) __p
     __Pyx_ErrFetch(&__pyx_type, &__pyx_value, &__pyx_tb);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_result.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.h_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.h_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -21718,15 +21718,15 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_3, 1, (PyObject *(*)(char *)) __p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_11v_vector(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_11v_vector(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_11v_vector = {"v_vector", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_11v_vector, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_11v_vector(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_11v_vector = {"v_vector", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_11v_vector, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_11v_vector(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -21827,11 +21827,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_v_adjacency, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.v_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.v_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_10v_vector(__pyx_self, __pyx_v_v_adjacency, __pyx_v_x, __pyx_v_y);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_10v_vector(__pyx_self, __pyx_v_v_adjacency, __pyx_v_x, __pyx_v_y);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_v_adjacency, 1);
@@ -21845,7 +21845,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_10v_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_v_adjacency, int __pyx_v_x, int __pyx_v_y) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_10v_vector(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_v_adjacency, int __pyx_v_x, int __pyx_v_y) {
   int __pyx_v_vector_size;
   int __pyx_v_i;
   int __pyx_v_j;
@@ -22157,7 +22157,7 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_3, 1, (PyObject *(*)(char *)) __p
     __Pyx_ErrFetch(&__pyx_type, &__pyx_value, &__pyx_tb);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_result.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.v_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.v_vector", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -22178,15 +22178,15 @@ __pyx_t_5 = __pyx_memoryview_fromslice(__pyx_t_3, 1, (PyObject *(*)(char *)) __p
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_13spans(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_13spans(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_13spans = {"spans", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_13spans, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_13spans(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_13spans = {"spans", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_13spans, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_13spans(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -22273,11 +22273,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_h_vector, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_v_vector, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.spans", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.spans", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_12spans(__pyx_self, __pyx_v_h_vector, __pyx_v_v_vector);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_12spans(__pyx_self, __pyx_v_h_vector, __pyx_v_v_vector);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_h_vector, 1);
@@ -22292,7 +22292,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_12spans(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_h_vector, __Pyx_memviewslice __pyx_v_v_vector) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_12spans(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_h_vector, __Pyx_memviewslice __pyx_v_v_vector) {
   int __pyx_v_h_len;
   int __pyx_v_v_len;
   PyArrayObject *__pyx_v_result = 0;
@@ -22474,7 +22474,7 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
     __Pyx_ErrFetch(&__pyx_type, &__pyx_value, &__pyx_tb);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_result.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.spans", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.spans", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -22495,15 +22495,15 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_15biggest_span(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_15biggest_span(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_15biggest_span = {"biggest_span", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_15biggest_span, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_15biggest_span(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_15biggest_span = {"biggest_span", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_15biggest_span, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_15biggest_span(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -22573,12 +22573,12 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
       __Pyx_Arg_XDECREF_FASTCALL(values[__pyx_temp]);
     }
   }
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.biggest_span", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.biggest_span", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
   if (unlikely(!__Pyx_ArgTypeTest(((PyObject *)__pyx_v_spans_array), __pyx_ptype_5numpy_ndarray, 1, "spans_array", 0))) __PYX_ERR(0, 150, __pyx_L1_error)
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_14biggest_span(__pyx_self, __pyx_v_spans_array);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_14biggest_span(__pyx_self, __pyx_v_spans_array);
 
   /* function exit code */
   goto __pyx_L0;
@@ -22595,7 +22595,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_14biggest_span(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_spans_array) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_14biggest_span(CYTHON_UNUSED PyObject *__pyx_self, PyArrayObject *__pyx_v_spans_array) {
   PyArrayObject *__pyx_v_result = 0;
   PyArrayObject *__pyx_v_areas = 0;
   int __pyx_v_biggest_span_index;
@@ -22827,7 +22827,7 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_result.rcbuffer->pybuffer);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_spans_array.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.biggest_span", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.biggest_span", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -22851,15 +22851,15 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_17span_map(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_17span_map(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_17span_map = {"span_map", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_17span_map, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_17span_map(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_17span_map = {"span_map", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_17span_map, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_17span_map(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -22962,11 +22962,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_grid, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_h_adjacency, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_v_adjacency, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.span_map", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.span_map", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_16span_map(__pyx_self, __pyx_v_grid, __pyx_v_h_adjacency, __pyx_v_v_adjacency);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_16span_map(__pyx_self, __pyx_v_grid, __pyx_v_h_adjacency, __pyx_v_v_adjacency);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_grid, 1);
@@ -22982,7 +22982,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_16span_map(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_grid, __Pyx_memviewslice __pyx_v_h_adjacency, __Pyx_memviewslice __pyx_v_v_adjacency) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_16span_map(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_grid, __Pyx_memviewslice __pyx_v_h_adjacency, __Pyx_memviewslice __pyx_v_v_adjacency) {
   int __pyx_v_nrows;
   int __pyx_v_ncols;
   __Pyx_memviewslice __pyx_v_span_map = { 0, 0, { 0 }, { 0 }, { 0 } };
@@ -23776,7 +23776,7 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
   __Pyx_XDECREF(__pyx_t_5);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_6, 1);
   __PYX_XCLEAR_MEMVIEW(&__pyx_t_11, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.span_map", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.span_map", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   __pyx_L0:;
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_span_map, 1);
@@ -23796,15 +23796,15 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
  */
 
 /* Python wrapper */
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_19biggest_span_in_span_map(PyObject *__pyx_self, 
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_19biggest_span_in_span_map(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
 PyObject *__pyx_args, PyObject *__pyx_kwds
 #endif
 ); /*proto*/
-static PyMethodDef __pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_19biggest_span_in_span_map = {"biggest_span_in_span_map", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_19biggest_span_in_span_map, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
-static PyObject *__pyx_pw_24largestinternalrectangle_24largestinternalrectangle_19biggest_span_in_span_map(PyObject *__pyx_self, 
+static PyMethodDef __pyx_mdef_27cy_largestinternalrectangle_19biggest_span_in_span_map = {"biggest_span_in_span_map", (PyCFunction)(void*)(__Pyx_PyCFunction_FastCallWithKeywords)__pyx_pw_27cy_largestinternalrectangle_19biggest_span_in_span_map, __Pyx_METH_FASTCALL|METH_KEYWORDS, 0};
+static PyObject *__pyx_pw_27cy_largestinternalrectangle_19biggest_span_in_span_map(PyObject *__pyx_self, 
 #if CYTHON_METH_FASTCALL
 PyObject *const *__pyx_args, Py_ssize_t __pyx_nargs, PyObject *__pyx_kwds
 #else
@@ -23875,11 +23875,11 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
     }
   }
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_span_map, 1);
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.biggest_span_in_span_map", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.biggest_span_in_span_map", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __Pyx_RefNannyFinishContext();
   return NULL;
   __pyx_L4_argument_unpacking_done:;
-  __pyx_r = __pyx_pf_24largestinternalrectangle_24largestinternalrectangle_18biggest_span_in_span_map(__pyx_self, __pyx_v_span_map);
+  __pyx_r = __pyx_pf_27cy_largestinternalrectangle_18biggest_span_in_span_map(__pyx_self, __pyx_v_span_map);
 
   /* function exit code */
   __PYX_XCLEAR_MEMVIEW(&__pyx_v_span_map, 1);
@@ -23893,7 +23893,7 @@ PyObject *__pyx_args, PyObject *__pyx_kwds
   return __pyx_r;
 }
 
-static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_18biggest_span_in_span_map(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_span_map) {
+static PyObject *__pyx_pf_27cy_largestinternalrectangle_18biggest_span_in_span_map(CYTHON_UNUSED PyObject *__pyx_self, __Pyx_memviewslice __pyx_v_span_map) {
   int __pyx_v_nrows;
   int __pyx_v_ncols;
   PyArrayObject *__pyx_v_areas_np = 0;
@@ -24299,7 +24299,7 @@ static PyObject *__pyx_pf_24largestinternalrectangle_24largestinternalrectangle_
     __Pyx_ErrFetch(&__pyx_type, &__pyx_value, &__pyx_tb);
     __Pyx_SafeReleaseBuffer(&__pyx_pybuffernd_areas_np.rcbuffer->pybuffer);
   __Pyx_ErrRestore(__pyx_type, __pyx_value, __pyx_tb);}
-  __Pyx_AddTraceback("largestinternalrectangle.largestinternalrectangle.biggest_span_in_span_map", __pyx_clineno, __pyx_lineno, __pyx_filename);
+  __Pyx_AddTraceback("cy_largestinternalrectangle.biggest_span_in_span_map", __pyx_clineno, __pyx_lineno, __pyx_filename);
   __pyx_r = NULL;
   goto __pyx_L2;
   __pyx_L0:;
@@ -24451,7 +24451,7 @@ static PyType_Slot __pyx_type___pyx_array_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_array_spec = {
-  "largestinternalrectangle.largestinternalrectangle.array",
+  "cy_largestinternalrectangle.array",
   sizeof(struct __pyx_array_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_SEQUENCE,
@@ -24497,7 +24497,7 @@ static PyBufferProcs __pyx_tp_as_buffer_array = {
 
 static PyTypeObject __pyx_type___pyx_array = {
   PyVarObject_HEAD_INIT(0, 0)
-  "largestinternalrectangle.largestinternalrectangle.""array", /*tp_name*/
+  "cy_largestinternalrectangle.""array", /*tp_name*/
   sizeof(struct __pyx_array_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_array, /*tp_dealloc*/
@@ -24660,7 +24660,7 @@ static PyType_Slot __pyx_type___pyx_MemviewEnum_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
-  "largestinternalrectangle.largestinternalrectangle.Enum",
+  "cy_largestinternalrectangle.Enum",
   sizeof(struct __pyx_MemviewEnum_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -24670,7 +24670,7 @@ static PyType_Spec __pyx_type___pyx_MemviewEnum_spec = {
 
 static PyTypeObject __pyx_type___pyx_MemviewEnum = {
   PyVarObject_HEAD_INIT(0, 0)
-  "largestinternalrectangle.largestinternalrectangle.""Enum", /*tp_name*/
+  "cy_largestinternalrectangle.""Enum", /*tp_name*/
   sizeof(struct __pyx_MemviewEnum_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_Enum, /*tp_dealloc*/
@@ -24970,7 +24970,7 @@ static PyType_Slot __pyx_type___pyx_memoryview_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryview_spec = {
-  "largestinternalrectangle.largestinternalrectangle.memoryview",
+  "cy_largestinternalrectangle.memoryview",
   sizeof(struct __pyx_memoryview_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC,
@@ -25016,7 +25016,7 @@ static PyBufferProcs __pyx_tp_as_buffer_memoryview = {
 
 static PyTypeObject __pyx_type___pyx_memoryview = {
   PyVarObject_HEAD_INIT(0, 0)
-  "largestinternalrectangle.largestinternalrectangle.""memoryview", /*tp_name*/
+  "cy_largestinternalrectangle.""memoryview", /*tp_name*/
   sizeof(struct __pyx_memoryview_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc_memoryview, /*tp_dealloc*/
@@ -25171,7 +25171,7 @@ static PyType_Slot __pyx_type___pyx_memoryviewslice_slots[] = {
   {0, 0},
 };
 static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
-  "largestinternalrectangle.largestinternalrectangle._memoryviewslice",
+  "cy_largestinternalrectangle._memoryviewslice",
   sizeof(struct __pyx_memoryviewslice_obj),
   0,
   Py_TPFLAGS_DEFAULT|Py_TPFLAGS_HAVE_VERSION_TAG|Py_TPFLAGS_CHECKTYPES|Py_TPFLAGS_HAVE_NEWBUFFER|Py_TPFLAGS_BASETYPE|Py_TPFLAGS_HAVE_GC|Py_TPFLAGS_SEQUENCE,
@@ -25181,7 +25181,7 @@ static PyType_Spec __pyx_type___pyx_memoryviewslice_spec = {
 
 static PyTypeObject __pyx_type___pyx_memoryviewslice = {
   PyVarObject_HEAD_INIT(0, 0)
-  "largestinternalrectangle.largestinternalrectangle.""_memoryviewslice", /*tp_name*/
+  "cy_largestinternalrectangle.""_memoryviewslice", /*tp_name*/
   sizeof(struct __pyx_memoryviewslice_obj), /*tp_basicsize*/
   0, /*tp_itemsize*/
   __pyx_tp_dealloc__memoryviewslice, /*tp_dealloc*/
@@ -25357,6 +25357,7 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_current, __pyx_k_current, sizeof(__pyx_k_current), 0, 0, 1, 1},
     {&__pyx_n_s_cy_get_horizontal_adjacency, __pyx_k_cy_get_horizontal_adjacency, sizeof(__pyx_k_cy_get_horizontal_adjacency), 0, 0, 1, 1},
     {&__pyx_n_s_cy_get_vertical_adjacency, __pyx_k_cy_get_vertical_adjacency, sizeof(__pyx_k_cy_get_vertical_adjacency), 0, 0, 1, 1},
+    {&__pyx_n_s_cy_largestinternalrectangle, __pyx_k_cy_largestinternalrectangle, sizeof(__pyx_k_cy_largestinternalrectangle), 0, 0, 1, 1},
     {&__pyx_n_s_dict, __pyx_k_dict, sizeof(__pyx_k_dict), 0, 0, 1, 1},
     {&__pyx_kp_u_disable, __pyx_k_disable, sizeof(__pyx_k_disable), 0, 1, 0, 0},
     {&__pyx_n_s_dtype, __pyx_k_dtype, sizeof(__pyx_k_dtype), 0, 0, 1, 1},
@@ -25391,7 +25392,6 @@ static int __Pyx_CreateStringTabAndInitStrings(void) {
     {&__pyx_n_s_j, __pyx_k_j, sizeof(__pyx_k_j), 0, 0, 1, 1},
     {&__pyx_n_s_largest_interior_rectangle, __pyx_k_largest_interior_rectangle, sizeof(__pyx_k_largest_interior_rectangle), 0, 0, 1, 1},
     {&__pyx_kp_s_largestinternalrectangle_largest, __pyx_k_largestinternalrectangle_largest, sizeof(__pyx_k_largestinternalrectangle_largest), 0, 0, 1, 0},
-    {&__pyx_n_s_largestinternalrectangle_largest_2, __pyx_k_largestinternalrectangle_largest_2, sizeof(__pyx_k_largestinternalrectangle_largest_2), 0, 0, 1, 1},
     {&__pyx_n_s_main, __pyx_k_main, sizeof(__pyx_k_main), 0, 0, 1, 1},
     {&__pyx_n_s_max, __pyx_k_max, sizeof(__pyx_k_max), 0, 0, 1, 1},
     {&__pyx_n_s_max_area, __pyx_k_max_area, sizeof(__pyx_k_max_area), 0, 0, 1, 1},
@@ -26123,10 +26123,10 @@ static int __Pyx_modinit_function_import_code(void) {
 #if PY_MAJOR_VERSION >= 3
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 static PyObject* __pyx_pymod_create(PyObject *spec, PyModuleDef *def); /*proto*/
-static int __pyx_pymod_exec_largestinternalrectangle(PyObject* module); /*proto*/
+static int __pyx_pymod_exec_cy_largestinternalrectangle(PyObject* module); /*proto*/
 static PyModuleDef_Slot __pyx_moduledef_slots[] = {
   {Py_mod_create, (void*)__pyx_pymod_create},
-  {Py_mod_exec, (void*)__pyx_pymod_exec_largestinternalrectangle},
+  {Py_mod_exec, (void*)__pyx_pymod_exec_cy_largestinternalrectangle},
   {0, NULL}
 };
 #endif
@@ -26139,7 +26139,7 @@ namespace {
   #endif
   {
       PyModuleDef_HEAD_INIT,
-      "largestinternalrectangle",
+      "cy_largestinternalrectangle",
       0, /* m_doc */
     #if CYTHON_PEP489_MULTI_PHASE_INIT
       0, /* m_size */
@@ -26187,11 +26187,11 @@ namespace {
 
 
 #if PY_MAJOR_VERSION < 3
-__Pyx_PyMODINIT_FUNC initlargestinternalrectangle(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC initlargestinternalrectangle(void)
+__Pyx_PyMODINIT_FUNC initcy_largestinternalrectangle(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC initcy_largestinternalrectangle(void)
 #else
-__Pyx_PyMODINIT_FUNC PyInit_largestinternalrectangle(void) CYTHON_SMALL_CODE; /*proto*/
-__Pyx_PyMODINIT_FUNC PyInit_largestinternalrectangle(void)
+__Pyx_PyMODINIT_FUNC PyInit_cy_largestinternalrectangle(void) CYTHON_SMALL_CODE; /*proto*/
+__Pyx_PyMODINIT_FUNC PyInit_cy_largestinternalrectangle(void)
 #if CYTHON_PEP489_MULTI_PHASE_INIT
 {
   return PyModuleDef_Init(&__pyx_moduledef);
@@ -26272,7 +26272,7 @@ bad:
 }
 
 
-static CYTHON_SMALL_CODE int __pyx_pymod_exec_largestinternalrectangle(PyObject *__pyx_pyinit_module)
+static CYTHON_SMALL_CODE int __pyx_pymod_exec_cy_largestinternalrectangle(PyObject *__pyx_pyinit_module)
 #endif
 #endif
 {
@@ -26295,7 +26295,7 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_largestinternalrectangle(PyObject 
   #if CYTHON_PEP489_MULTI_PHASE_INIT
   if (__pyx_m) {
     if (__pyx_m == __pyx_pyinit_module) return 0;
-    PyErr_SetString(PyExc_RuntimeError, "Module 'largestinternalrectangle' has already been imported. Re-initialisation is not supported.");
+    PyErr_SetString(PyExc_RuntimeError, "Module 'cy_largestinternalrectangle' has already been imported. Re-initialisation is not supported.");
     return -1;
   }
   #elif PY_MAJOR_VERSION >= 3
@@ -26307,13 +26307,13 @@ static CYTHON_SMALL_CODE int __pyx_pymod_exec_largestinternalrectangle(PyObject 
   Py_INCREF(__pyx_m);
   #else
   #if PY_MAJOR_VERSION < 3
-  __pyx_m = Py_InitModule4("largestinternalrectangle", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
+  __pyx_m = Py_InitModule4("cy_largestinternalrectangle", __pyx_methods, 0, 0, PYTHON_API_VERSION); Py_XINCREF(__pyx_m);
   if (unlikely(!__pyx_m)) __PYX_ERR(0, 1, __pyx_L1_error)
   #elif CYTHON_USE_MODULE_STATE
   __pyx_t_1 = PyModule_Create(&__pyx_moduledef); if (unlikely(!__pyx_t_1)) __PYX_ERR(0, 1, __pyx_L1_error)
   {
     int add_module_result = PyState_AddModule(__pyx_t_1, &__pyx_moduledef);
-    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "largestinternalrectangle" pseudovariable */
+    __pyx_t_1 = 0; /* transfer ownership from __pyx_t_1 to "cy_largestinternalrectangle" pseudovariable */
     if (unlikely((add_module_result < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     pystate_addmodule_run = 1;
   }
@@ -26337,7 +26337,7 @@ if (!__Pyx_RefNanny) {
       Py_FatalError("failed to import 'refnanny' module");
 }
 #endif
-  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_largestinternalrectangle(void)", 0);
+  __Pyx_RefNannySetupContext("__Pyx_PyMODINIT_FUNC PyInit_cy_largestinternalrectangle(void)", 0);
   if (__Pyx_check_binary_version(__PYX_LIMITED_VERSION_HEX, __Pyx_get_runtime_version(), CYTHON_COMPILING_IN_LIMITED_API) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #ifdef __Pxy_PyFrame_Initialize_Offsets
   __Pxy_PyFrame_Initialize_Offsets();
@@ -26375,14 +26375,14 @@ if (!__Pyx_RefNanny) {
   #if PY_MAJOR_VERSION < 3 && (__PYX_DEFAULT_STRING_ENCODING_IS_ASCII || __PYX_DEFAULT_STRING_ENCODING_IS_DEFAULT)
   if (__Pyx_init_sys_getdefaultencoding_params() < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   #endif
-  if (__pyx_module_is_main_largestinternalrectangle__largestinternalrectangle) {
+  if (__pyx_module_is_main_cy_largestinternalrectangle) {
     if (PyObject_SetAttr(__pyx_m, __pyx_n_s_name_2, __pyx_n_s_main) < 0) __PYX_ERR(0, 1, __pyx_L1_error)
   }
   #if PY_MAJOR_VERSION >= 3
   {
     PyObject *modules = PyImport_GetModuleDict(); if (unlikely(!modules)) __PYX_ERR(0, 1, __pyx_L1_error)
-    if (!PyDict_GetItemString(modules, "largestinternalrectangle.largestinternalrectangle")) {
-      if (unlikely((PyDict_SetItemString(modules, "largestinternalrectangle.largestinternalrectangle", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
+    if (!PyDict_GetItemString(modules, "cy_largestinternalrectangle")) {
+      if (unlikely((PyDict_SetItemString(modules, "cy_largestinternalrectangle", __pyx_m) < 0))) __PYX_ERR(0, 1, __pyx_L1_error)
     }
   }
   #endif
@@ -26947,7 +26947,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_1cy_get_horizontal_adjacency, 0, __pyx_n_s_cy_get_horizontal_adjacency, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 12, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_1cy_get_horizontal_adjacency, 0, __pyx_n_s_cy_get_horizontal_adjacency, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__26)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_cy_get_horizontal_adjacency, __pyx_t_7) < 0) __PYX_ERR(0, 12, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -26959,7 +26959,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_3cy_get_vertical_adjacency, 0, __pyx_n_s_cy_get_vertical_adjacency, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 37, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_3cy_get_vertical_adjacency, 0, __pyx_n_s_cy_get_vertical_adjacency, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__28)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_cy_get_vertical_adjacency, __pyx_t_7) < 0) __PYX_ERR(0, 37, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -26971,7 +26971,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_5largest_interior_rectangle, 0, __pyx_n_s_largest_interior_rectangle, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 60, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_5largest_interior_rectangle, 0, __pyx_n_s_largest_interior_rectangle, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__30)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_largest_interior_rectangle, __pyx_t_7) < 0) __PYX_ERR(0, 60, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -26983,7 +26983,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_7predict_vector_size, 0, __pyx_n_s_predict_vector_size, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 72, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_7predict_vector_size, 0, __pyx_n_s_predict_vector_size, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__32)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_predict_vector_size, __pyx_t_7) < 0) __PYX_ERR(0, 72, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -26995,7 +26995,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_9h_vector, 0, __pyx_n_s_h_vector, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 85, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_9h_vector, 0, __pyx_n_s_h_vector, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__34)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_h_vector, __pyx_t_7) < 0) __PYX_ERR(0, 85, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -27007,7 +27007,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_11v_vector, 0, __pyx_n_s_v_vector, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 108, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_11v_vector, 0, __pyx_n_s_v_vector, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__36)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_v_vector, __pyx_t_7) < 0) __PYX_ERR(0, 108, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -27019,7 +27019,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_13spans, 0, __pyx_n_s_spans, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__38)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 131, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_13spans, 0, __pyx_n_s_spans, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__38)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_spans, __pyx_t_7) < 0) __PYX_ERR(0, 131, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -27031,7 +27031,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_15biggest_span, 0, __pyx_n_s_biggest_span, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 146, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_15biggest_span, 0, __pyx_n_s_biggest_span, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__40)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_biggest_span, __pyx_t_7) < 0) __PYX_ERR(0, 146, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -27043,7 +27043,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_17span_map, 0, __pyx_n_s_span_map, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 162, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_17span_map, 0, __pyx_n_s_span_map, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__42)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_span_map, __pyx_t_7) < 0) __PYX_ERR(0, 162, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -27055,7 +27055,7 @@ if (!__Pyx_RefNanny) {
  * @wraparound(False)
  * @initializedcheck(False)
  */
-  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_24largestinternalrectangle_24largestinternalrectangle_19biggest_span_in_span_map, 0, __pyx_n_s_biggest_span_in_span_map, NULL, __pyx_n_s_largestinternalrectangle_largest_2, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 243, __pyx_L1_error)
+  __pyx_t_7 = __Pyx_CyFunction_New(&__pyx_mdef_27cy_largestinternalrectangle_19biggest_span_in_span_map, 0, __pyx_n_s_biggest_span_in_span_map, NULL, __pyx_n_s_cy_largestinternalrectangle, __pyx_d, ((PyObject *)__pyx_codeobj__44)); if (unlikely(!__pyx_t_7)) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_GOTREF(__pyx_t_7);
   if (PyDict_SetItem(__pyx_d, __pyx_n_s_biggest_span_in_span_map, __pyx_t_7) < 0) __PYX_ERR(0, 243, __pyx_L1_error)
   __Pyx_DECREF(__pyx_t_7); __pyx_t_7 = 0;
@@ -27079,7 +27079,7 @@ if (!__Pyx_RefNanny) {
   __Pyx_XDECREF(__pyx_t_7);
   if (__pyx_m) {
     if (__pyx_d && stringtab_initialized) {
-      __Pyx_AddTraceback("init largestinternalrectangle.largestinternalrectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
+      __Pyx_AddTraceback("init cy_largestinternalrectangle", __pyx_clineno, __pyx_lineno, __pyx_filename);
     }
     #if !CYTHON_USE_MODULE_STATE
     Py_CLEAR(__pyx_m);
@@ -27093,7 +27093,7 @@ if (!__Pyx_RefNanny) {
     }
     #endif
   } else if (!PyErr_Occurred()) {
-    PyErr_SetString(PyExc_ImportError, "init largestinternalrectangle.largestinternalrectangle");
+    PyErr_SetString(PyExc_ImportError, "init cy_largestinternalrectangle");
   }
   __pyx_L0:;
   __Pyx_RefNannyFinishContext();

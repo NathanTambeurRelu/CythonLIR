@@ -1,0 +1,10 @@
+README.md
+pyproject.toml
+setup.py
+cy_largestinternalrectangle/__intit__.py
+cy_largestinternalrectangle/largestinternalrectangle.c
+cy_largestinternalrectangle.egg-info/PKG-INFO
+cy_largestinternalrectangle.egg-info/SOURCES.txt
+cy_largestinternalrectangle.egg-info/dependency_links.txt
+cy_largestinternalrectangle.egg-info/not-zip-safe
+cy_largestinternalrectangle.egg-info/top_level.txt
